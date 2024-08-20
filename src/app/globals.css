@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-header {
+  @apply flex 
+  items-center  
+  border-b 
+  border-sky-800;
+}
+.page-header > * {
+  @apply bg-gradient-to-r
+   from-sky-200
+    to-sky-800;
+}
+.page-header button {
+  @apply capitalize;
+}
+
+.page-body {
+  @apply p-4;
+}
