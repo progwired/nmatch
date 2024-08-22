@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  @apply h-full;
+}
+
+body > * {
+  /* @apply flex flex-col; */
+  @apply h-full;
+}
+
+body > * > .providers {
+  @apply flex flex-col h-full;
+}
+.page-body {
+  @apply flex flex-grow w-full min-h-fit;
+}
+
 .page-header {
   @apply flex 
   items-center  
@@ -18,5 +35,4 @@
 }
 
 .page-body {
-  @apply p-4;
 }

@@ -22,7 +22,7 @@ function TopNav() {
                 <GiSofa size={40}
                     className="text-slate-500" />
                 <div className='font-bold text-3xl flex space-x-0'>
-                    <span>N</span>
+                    <span>L</span>
                     <span className="text-slate-500">Sofa</span>
                 </div>
             </NavbarBrand>

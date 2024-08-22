@@ -1,10 +1,11 @@
 import React from 'react'
+import RegisterForm from './RegisterForm'
 
 function RegisterPage() {
     return (
-        <div>
-            Register with NSofa
-        </div>
+        <>
+            <RegisterForm />
+        </>
     )
 }
 
