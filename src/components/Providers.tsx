@@ -5,9 +5,7 @@ import { NextUIProvider } from '@nextui-org/react'
 function Providers({ children }: PageProps) {
     return (
         <NextUIProvider>
-            <div className="providers">
-                {children}
-            </div>
+            {children}
         </NextUIProvider>
     )
 }

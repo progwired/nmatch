@@ -1,11 +1,11 @@
 import React from 'react'
 
-function LoginPage() {
+function ScalePage() {
     return (
         <div>
-            Login Page
+            Scale Page
         </div>
     )
 }
 
-export default LoginPage
+export default ScalePage
