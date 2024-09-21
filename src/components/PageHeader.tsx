@@ -2,16 +2,22 @@ import React from 'react'
 import Brand from './nav/Brand'
 import TopNav from './nav/TopNav'
 import UserNav from './nav/UserNav'
+import { Navbar } from '@nextui-org/react'
 
 function PageHeader() {
     return (
-        <header className='page-header'>
-            <nav>
+        <nav className='page-header'>
+            <Navbar
+                classNames={{
+                    item: [
+                        "capitalize",
+                    ]
+                }}>
                 <Brand />
                 <TopNav />
                 <UserNav />
-            </nav>
-        </header>
+            </ Navbar>
+        </nav>
     )
 }
 

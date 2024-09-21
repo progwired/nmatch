@@ -1,14 +1,22 @@
+"use client"
+import { NavbarItem } from '@nextui-org/react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react'
 
-interface Props {
+export interface NavProps {
     href: string;
     label: string;
 }
 
-function NavLink({ href, label }: Props) {
+function NavLink({ href, label }: NavProps) {
+    const pathName = usePathname();
     return (
-        <Link href={href}>{label}</Link>
+        <NavbarItem isActive={href === pathName} key={href}
+            as={Link}
+            href={href}
+            className='nav-item'
+        > {label}</NavbarItem>
     )
 }
 

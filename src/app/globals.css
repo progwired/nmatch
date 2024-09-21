@@ -3,20 +3,31 @@
 @tailwind utilities;
 
 .page-header {
-  @apply flex bg-slate-200 border-b border-slate-400 p-4;
+  @apply flex bg-slate-200 border-b border-slate-400 justify-between w-full;
 }
+
 .page-header > nav {
-  @apply flex justify-between w-full;
+  @apply flex bg-none;
+}
+
+.page-header > nav > header {
+  @apply flex-grow max-w-[100%] bg-none;
 }
 
 .page-body {
 }
 
 .page-content {
-  @apply p-4;
+  @apply p-6;
 }
 
 .top-nav,
 .user-nav {
   @apply flex gap-4;
+}
+.nav-item {
+  @apply font-normal;
+}
+.nav-item[data-active="true"] {
+  @apply text-blue-700;
 }

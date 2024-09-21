@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import UserNavSigned from './UserNavSigned'
 import NavLink from './NavLink'
+import { NavbarContent } from '@nextui-org/react'
 
 function UserNav() {
 
@@ -9,13 +10,15 @@ function UserNav() {
 
     const renderedNav = signed ?
         <UserNavSigned /> :
-        <div className='user-nav'>
+        <>
             <NavLink href='/login' label='Login' />
             <NavLink href='/register' label='Register' />
-        </div>
+        </>
 
     return (
-        renderedNav
+        <NavbarContent className='user-nav' justify='end'>
+            {renderedNav}
+        </NavbarContent>
     )
 }
 

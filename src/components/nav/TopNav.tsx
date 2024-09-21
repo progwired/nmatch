@@ -1,13 +1,21 @@
 import React from 'react'
-import NavLink from './NavLink'
+import NavLink, { NavProps } from './NavLink'
+import dataTopNav from '@/static/data/topnav'
+import { NavbarContent } from '@nextui-org/react'
 
 function TopNav() {
+
+    const renderedNav = dataTopNav.map(({ href, label }: NavProps) => {
+        return <NavLink key={href} href={href} label={label} />
+    })
+
     return (
-        <div className='top-nav'>
-            <NavLink href='/performance' label='Performance' />
-            <NavLink href='/reliability' label='Reliability' />
-            <NavLink href='/scale' label='Scale' />
-        </div>
+        <NavbarContent
+            className='top-nav'
+            justify='center'
+        >
+            {renderedNav}
+        </NavbarContent>
     )
 }
 
