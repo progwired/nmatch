@@ -1,14 +1,12 @@
 import React from 'react'
 import { NavbarBrand } from '@nextui-org/react'
 import Link from 'next/link'
+import BrandName from '@/components/ui/BrandName'
 
 function Brand() {
     return (
-        <NavbarBrand className='brand' as={Link} href={"/"}>
-            <div className='flex font-bold text-2xl'>
-                <span className='text-green-700'>N</span>
-                <span className='text-blue-700'>M</span>
-            </div>
+        <NavbarBrand className='brand text-2xl' as={Link} href={"/"}>
+            <BrandName />
         </NavbarBrand>
     )
 }

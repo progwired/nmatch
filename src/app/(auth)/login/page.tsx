@@ -1,10 +1,13 @@
 import React from 'react'
+import LoginForm from './LoginForm'
+import AlignMiddle from '@/components/ui/AlignMiddle'
 
 function LoginPage() {
     return (
-        <div>
-            Login Page
-        </div>
+        <AlignMiddle>
+            <LoginForm />
+        </AlignMiddle>
+
     )
 }
 

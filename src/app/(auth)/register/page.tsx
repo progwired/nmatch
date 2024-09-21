@@ -1,10 +1,13 @@
 import React from 'react'
+import RegisterForm from './RegisterForm'
+import AlignMiddle from '@/components/ui/AlignMiddle'
+
 
 function RegisterPage() {
     return (
-        <div>
-            Register Page
-        </div>
+        <AlignMiddle>
+            <RegisterForm />
+        </AlignMiddle>
     )
 }
 
